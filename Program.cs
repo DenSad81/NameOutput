@@ -3,23 +3,24 @@
 class Program
 {
     static void Main(string[] args) {
-        string character;
+        char symbol;
         string name;
-        string frame = "";
-        int frameLenght;
+        string frameName;
+        string frameBorder = "";
 
         Console.Write("Выберете символ: ");
-        character = Console.ReadLine();
+        symbol = Console.ReadKey(true).KeyChar;
+        Console.WriteLine(symbol);
         Console.Write("Выберете Имя: ");
         name = Console.ReadLine();
 
-        frameLenght = character.Length + name.Length + character.Length;
+        frameName = symbol + name + symbol;
 
-        for (int i = 0; i < frameLenght; i++)
-            frame += character;
+        for (int i = 0; i < frameName.Length; i++)
+            frameBorder += symbol;
 
-        Console.WriteLine(frame);
-        Console.WriteLine(character + name + character);
-        Console.WriteLine(frame);
+        Console.WriteLine(frameBorder);
+        Console.WriteLine(frameName);
+        Console.WriteLine(frameBorder);
     }
 }
