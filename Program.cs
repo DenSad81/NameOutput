@@ -18,8 +18,7 @@ class Program
             Console.Write(character);
 
         Console.WriteLine();
-        Console.Write(character + name + character);
-        Console.WriteLine();
+        Console.WriteLine(character + name + character);
 
         for (int i = 0; i < nameLenght + quantityAddictionalCharacter; i++)
             Console.Write(character);
